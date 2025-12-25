@@ -16,7 +16,7 @@ export class OrdersPage {
         await this.orderRows.first().waitFor();
         const orderCount: number = await this.orderRows.count();
         //Search for orders based on ORDER ID in table and click on Order details
-        for (var i: number = 0;i<=orderCount;i++){
+        for (var i: number = 0;i<orderCount;i++){
             if(await this.orderRows.nth(i).locator('th').textContent() === orderID){
                 this.orderRows.nth(i).locator('button.btn-primary').click();
                 break;

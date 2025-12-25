@@ -29,7 +29,7 @@ test('API and UI validation using util @APInUI',async ({page}) => {
     const orderRows: Locator = page.locator('tr.ng-star-inserted');
     const orderCount: number = await orderRows.count();
     //Search for orders based on ORDER ID in table and click on Order details
-    for (var i: number = 0;i<=orderCount;i++){
+    for (var i: number = 0;i<orderCount;i++){
         if(await orderRows.nth(i).locator('th').textContent() === orderID){
             orderRows.nth(i).locator('button.btn-primary').click();
             break;

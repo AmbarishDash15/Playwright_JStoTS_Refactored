@@ -128,7 +128,7 @@ test('End to End using API Login @APInUI', async({page}) => {
     expect(await orderSummItemName.textContent()).toContain(itemToBuy);
 })
 
-test.only('Login and Order with API and order UI Validation @APInUI',async({page}) => {
+test('Login and Order with API and order UI Validation @APInUI',async({page}) => {
     const itemToBuy: string = 'ZARA COAT 3';
     await page.addInitScript(value => {
         window.localStorage.setItem('token',value);

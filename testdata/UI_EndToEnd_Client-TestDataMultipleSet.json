@@ -1,0 +1,28 @@
+[
+    {
+        "appUrl" : "https://rahulshettyacademy.com/client",
+        "loginEmail" : "dash.ambarish15+fourth@gmail.com",
+        "password" : "Password@123",
+        "itemToBuy" : "ZARA COAT 3",
+        "ccNo" : "4242424242424242",
+        "ccExpMonth" : "12",
+        "ccExpYear" : "30",
+        "ccCVV" : "123",
+        "ccNameOnCard" : "Tester",
+        "couponToApply" : "rahulshettyacademy",
+        "country" : "India"
+    },
+    {
+        "appUrl" : "https://rahulshettyacademy.com/client",
+        "loginEmail" : "dash.ambarish15+fifth@gmail.com",
+        "password" : "Password@123",
+        "itemToBuy" : "ADIDAS ORIGINAL",
+        "ccNo" : "4242424242421111",
+        "ccExpMonth" : "11",
+        "ccExpYear" : "28",
+        "ccCVV" : "456",
+        "ccNameOnCard" : "QA",
+        "couponToApply" : "rahulshettyacademy",
+        "country" : "Cuba"
+    }
+]

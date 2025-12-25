@@ -1,0 +1,805 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - banner [ref=e2]:
+    - link:
+      - /url: https://www.rahulshettyacademy.com/
+      - img [ref=e3] [cursor=pointer]
+    - link "Free Access to InterviewQues/ResumeAssistance/Material" [ref=e4] [cursor=pointer]:
+      - /url: https://rahulshettyacademy.com/documents-request
+    - generic [ref=e5]:
+      - link "Home" [ref=e6] [cursor=pointer]:
+        - /url: https://www.rahulshettyacademy.com/
+        - button "Home" [ref=e7]
+      - button "Practice" [ref=e8] [cursor=pointer]
+      - button "Login" [ref=e9] [cursor=pointer]
+      - button "Signup" [ref=e10] [cursor=pointer]
+  - heading "Practice Page" [level=1] [ref=e11]
+  - generic [ref=e12]:
+    - group "Radio Button Example" [ref=e14]:
+      - generic [ref=e15]: Radio Button Example
+      - generic [ref=e16] [cursor=pointer]:
+        - radio [ref=e17]
+        - text: Radio1
+      - generic [ref=e18] [cursor=pointer]:
+        - radio [ref=e19]
+        - text: Radio2
+      - generic [ref=e20] [cursor=pointer]:
+        - radio [ref=e21]
+        - text: Radio3
+    - group "Suggession Class Example" [ref=e23]:
+      - generic [ref=e24]: Suggession Class Example
+      - textbox "Type to Select Countries" [ref=e25]
+    - group "Dropdown Example" [ref=e27]:
+      - generic [ref=e28]: Dropdown Example
+      - combobox [ref=e29]:
+        - option "Select" [selected]
+        - option "Option1"
+        - option "Option2"
+        - option "Option3"
+    - group "Checkbox Example" [ref=e31]:
+      - generic [ref=e32]: Checkbox Example
+      - generic [ref=e33] [cursor=pointer]:
+        - checkbox [ref=e34]
+        - text: Option1
+      - generic [ref=e35] [cursor=pointer]:
+        - checkbox [ref=e36]
+        - text: Option2
+      - generic [ref=e37] [cursor=pointer]:
+        - checkbox [ref=e38]
+        - text: Option3
+  - generic [ref=e39]:
+    - group "Switch Window Example" [ref=e41]:
+      - generic [ref=e42]: Switch Window Example
+      - button "Open Window" [ref=e43] [cursor=pointer]
+    - group "Switch Tab Example" [ref=e45]:
+      - generic [ref=e46]: Switch Tab Example
+      - link "Open Tab" [ref=e47] [cursor=pointer]:
+        - /url: https://www.qaclickacademy.com
+    - group "Switch To Alert Example" [ref=e49]:
+      - generic [ref=e50]: Switch To Alert Example
+      - textbox "Enter Your Name" [ref=e51]
+      - button "Alert" [ref=e52] [cursor=pointer]
+      - button "Confirm" [ref=e53] [cursor=pointer]
+  - generic [ref=e54]:
+    - group "Web Table Example" [ref=e56]:
+      - generic [ref=e57]: Web Table Example
+      - table [ref=e58]:
+        - rowgroup [ref=e59]:
+          - row "Instructor Course Price" [ref=e60]:
+            - columnheader "Instructor" [ref=e61]
+            - columnheader "Course" [ref=e62]
+            - columnheader "Price" [ref=e63]
+          - row "Rahul Shetty Selenium Webdriver with Java Basics + Advanced + Interview Guide 30" [ref=e64]:
+            - cell "Rahul Shetty" [ref=e65]
+            - cell "Selenium Webdriver with Java Basics + Advanced + Interview Guide" [ref=e66]
+            - cell "30" [ref=e67]
+          - row "Rahul Shetty Learn SQL in Practical + Database Testing from Scratch 25" [ref=e68]:
+            - cell "Rahul Shetty" [ref=e69]
+            - cell "Learn SQL in Practical + Database Testing from Scratch" [ref=e70]
+            - cell "25" [ref=e71]
+          - row "Rahul Shetty Appium (Selenium) - Mobile Automation Testing from Scratch 30" [ref=e72]:
+            - cell "Rahul Shetty" [ref=e73]
+            - cell "Appium (Selenium) - Mobile Automation Testing from Scratch" [ref=e74]
+            - cell "30" [ref=e75]
+          - row "Rahul Shetty WebSecurity Testing for Beginners-QA knowledge to next level 20" [ref=e76]:
+            - cell "Rahul Shetty" [ref=e77]
+            - cell "WebSecurity Testing for Beginners-QA knowledge to next level" [ref=e78]
+            - cell "20" [ref=e79]
+          - row "Rahul Shetty Learn JMETER from Scratch - (Performance + Load) Testing Tool 25" [ref=e80]:
+            - cell "Rahul Shetty" [ref=e81]
+            - cell "Learn JMETER from Scratch - (Performance + Load) Testing Tool" [ref=e82]
+            - cell "25" [ref=e83]
+          - row "Rahul Shetty WebServices / REST API Testing with SoapUI 35" [ref=e84]:
+            - cell "Rahul Shetty" [ref=e85]
+            - cell "WebServices / REST API Testing with SoapUI" [ref=e86]
+            - cell "35" [ref=e87]
+          - row "Rahul Shetty QA Expert Course :Software Testing + Bugzilla + SQL + Agile 25" [ref=e88]:
+            - cell "Rahul Shetty" [ref=e89]
+            - cell "QA Expert Course :Software Testing + Bugzilla + SQL + Agile" [ref=e90]
+            - cell "25" [ref=e91]
+          - row "Rahul Shetty Master Selenium Automation in simple Python Language 25" [ref=e92]:
+            - cell "Rahul Shetty" [ref=e93]
+            - cell "Master Selenium Automation in simple Python Language" [ref=e94]
+            - cell "25" [ref=e95]
+          - row "Rahul Shetty Advanced Selenium Framework Pageobject, TestNG, Maven, Jenkins,C 20" [ref=e96]:
+            - cell "Rahul Shetty" [ref=e97]
+            - cell "Advanced Selenium Framework Pageobject, TestNG, Maven, Jenkins,C" [ref=e98]
+            - cell "20" [ref=e99]
+          - row "Rahul Shetty Write effective QA Resume that will turn to interview call 0" [ref=e100]:
+            - cell "Rahul Shetty" [ref=e101]
+            - cell "Write effective QA Resume that will turn to interview call" [ref=e102]
+            - cell "0" [ref=e103]
+    - generic [ref=e104]:
+      - group "Element Displayed Example" [ref=e105]:
+        - generic [ref=e106]: Element Displayed Example
+        - button "Hide" [ref=e107] [cursor=pointer]
+        - button "Show" [ref=e108] [cursor=pointer]
+        - textbox "Hide/Show Example" [ref=e109]
+      - group "Web Table Fixed header" [ref=e110]:
+        - generic [ref=e111]: Web Table Fixed header
+        - table [ref=e113]:
+          - rowgroup [ref=e114]:
+            - row "Name Position City Amount" [ref=e115]:
+              - columnheader "Name" [ref=e116]
+              - columnheader "Position" [ref=e117]
+              - columnheader "City" [ref=e118]
+              - columnheader "Amount" [ref=e119]
+          - rowgroup [ref=e120]:
+            - row "Alex Engineer Chennai 28" [ref=e121]:
+              - cell "Alex" [ref=e122]
+              - cell "Engineer" [ref=e123]
+              - cell "Chennai" [ref=e124]
+              - cell "28" [ref=e125]
+            - row "Ben Mechanic Bengaluru 23" [ref=e126]:
+              - cell "Ben" [ref=e127]
+              - cell "Mechanic" [ref=e128]
+              - cell "Bengaluru" [ref=e129]
+              - cell "23" [ref=e130]
+            - row "Dwayne Manager Kolkata 48" [ref=e131]:
+              - cell "Dwayne" [ref=e132]
+              - cell "Manager" [ref=e133]
+              - cell "Kolkata" [ref=e134]
+              - cell "48" [ref=e135]
+            - row "Ivory Receptionist Chennai 18" [ref=e136]:
+              - cell "Ivory" [ref=e137]
+              - cell "Receptionist" [ref=e138]
+              - cell "Chennai" [ref=e139]
+              - cell "18" [ref=e140]
+            - row "Jack Engineer Pune 32" [ref=e141]:
+              - cell "Jack" [ref=e142]
+              - cell "Engineer" [ref=e143]
+              - cell "Pune" [ref=e144]
+              - cell "32" [ref=e145]
+            - row "Joe Postman Chennai 46" [ref=e146]:
+              - cell "Joe" [ref=e147]
+              - cell "Postman" [ref=e148]
+              - cell "Chennai" [ref=e149]
+              - cell "46" [ref=e150]
+            - row "Raymond Businessman Mumbai 37" [ref=e151]:
+              - cell "Raymond" [ref=e152]
+              - cell "Businessman" [ref=e153]
+              - cell "Mumbai" [ref=e154]
+              - cell "37" [ref=e155]
+            - row "Ronaldo Sportsman Chennai 31" [ref=e156]:
+              - cell "Ronaldo" [ref=e157]
+              - cell "Sportsman" [ref=e158]
+              - cell "Chennai" [ref=e159]
+              - cell "31" [ref=e160]
+            - row "Smith Cricketer Delhi 33" [ref=e161]:
+              - cell "Smith" [ref=e162]
+              - cell "Cricketer" [ref=e163]
+              - cell "Delhi" [ref=e164]
+              - cell "33" [ref=e165]
+        - generic [ref=e166]: "Total Amount Collected: 296"
+  - group "Mouse Hover Example" [ref=e169]:
+    - generic [ref=e170]: Mouse Hover Example
+    - button "Mouse Hover" [ref=e172] [cursor=pointer]
+  - group "iFrame Example" [ref=e174]:
+    - generic [ref=e175]: iFrame Example
+    - iframe [active] [ref=e176]:
+      - generic:
+        - generic:
+          - list
+          - region "Notifications alt+T"
+          - generic:
+            - navigation:
+              - generic:
+                - generic:
+                  - generic:
+                    - link:
+                      - /url: /
+                      - text: RAHUL SHETTY
+                  - generic:
+                    - link:
+                      - /url: /all-access-subscription
+                      - img
+                      - text: All-Access
+                    - link:
+                      - /url: /learning-paths
+                      - img
+                      - text: Learning Paths
+                    - link:
+                      - /url: /mentorship
+                      - img
+                      - text: Mentorship
+                    - link:
+                      - /url: /ai-learning-path
+                      - img
+                      - text: AI Learning Path
+                      - generic: NEW
+                    - link:
+                      - /url: /practice
+                      - img
+                      - text: Practice
+                    - link:
+                      - /url: https://qasummit.org
+                      - img
+                      - text: Meet ups
+                    - button:
+                      - img
+                      - text: Contact Us
+                      - img
+                  - generic:
+                    - link:
+                      - /url: https://courses.rahulshettyacademy.com/sign_up
+                      - text: Sign Up
+                    - link:
+                      - /url: https://courses.rahulshettyacademy.com/courses
+                      - text: Browse Courses
+            - main:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic: Trusted by 1 Million+ Students
+                        - heading [level=1]:
+                          - text: An Academy to Learn & Shine in your
+                          - generic: QA/AI Career.
+                        - paragraph: World-class tutorials on Playwright, AI Testing, Selenium, ISTQB, API Testing, Postman, Cypress, Appium, Cucumber, SoapUI, JMeter, Jira, and many more. Join our courses now to get the best job opportunity.
+                      - generic:
+                        - link:
+                          - /url: https://courses.rahulshettyacademy.com/sign_up
+                          - text: JOIN NOW
+                        - link:
+                          - /url: /learning-paths
+                          - text: Browse Learning Paths
+                      - generic:
+                        - generic:
+                          - generic: 1Million+
+                          - generic: Students
+                        - generic:
+                          - generic: "195"
+                          - generic: Countries
+                        - generic:
+                          - generic: 40+
+                          - generic: Courses
+                        - generic:
+                          - generic: 100%
+                          - generic: Job Ready
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: 🚀
+                            - generic:
+                              - generic:
+                                - generic:
+                                  - generic:
+                                    - generic:
+                                      - generic: ⚡
+                                    - generic: Test Automation
+                              - generic:
+                                - generic:
+                                  - generic: TESTING ACADEMY
+                              - generic:
+                                - generic:
+                                  - generic:
+                                    - generic:
+                                      - generic: 🤖
+                                    - generic: Gen AI Learning
+                          - generic:
+                            - generic: Selenium
+                            - generic: Cypress
+                            - generic: AI Testing
+                            - generic: Playwright
+                            - generic: Agentic AI
+                            - generic: API Testing
+                            - generic: Performance
+                            - generic: Software Testing
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic: Meet Your Instructor
+                        - heading [level=2]: Hi, I'm Rahul Shetty.
+                        - paragraph: I've had the privilege of guiding over 1 million QA professionals to achieve their career dreams. As one of Udemy's most successful QA instructors, I've spent years simplifying complex concepts into practical, real-world lessons that anyone can follow.
+                        - paragraph: "My mission is simple: to help you become job-ready, future-ready, and confident in tackling modern testing challenges — from automation frameworks to AI-powered QA workflows. Whether you're starting fresh or aiming to scale higher in your career, I'm here to mentor you every step of the way."
+                      - generic:
+                        - link:
+                          - /url: https://qasummit.org/about-speaker
+                          - text: Check my Portfolio
+                    - generic:
+                      - generic:
+                        - generic:
+                          - img
+                          - generic:
+                            - generic: ✓ Test Automation
+                            - generic: Master Level
+              - generic:
+                - generic:
+                  - generic:
+                    - generic: Skills & Benefits
+                    - heading [level=2]: Learn the skills companies hire for
+                    - paragraph: From Selenium and Playwright to AI‑powered test agents and data validations, Learn end‑to‑end, Job‑ready courses with real time projects handson.
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - img
+                        - heading [level=3]: Lifetime Access
+                        - paragraph: Lifetime access to all course materials. Learn at your own pace and updates are free for life. No time restrictions.
+                    - generic:
+                      - generic:
+                        - generic:
+                          - img
+                        - heading [level=3]: Mentor-first Teaching
+                        - paragraph: Clear explanations, simple mental models, and community support to keep you moving.
+                    - generic:
+                      - generic:
+                        - generic:
+                          - img
+                        - heading [level=3]: Hands-on Frameworks
+                        - paragraph: Design real automation frameworks with CI/CD, reporting, and best practices.
+                    - generic:
+                      - generic:
+                        - generic:
+                          - img
+                        - heading [level=3]: Career-Focused
+                        - paragraph: Interview prep, project templates, and resume-ready case studies built in.
+                    - generic:
+                      - generic:
+                        - generic:
+                          - img
+                        - heading [level=3]: Multi-Stack Tools
+                        - paragraph: Selenium, Playwright, Cypress, API, ETL/Data – pick your stack and go deep.
+                    - generic:
+                      - generic:
+                        - generic:
+                          - img
+                        - heading [level=3]: AI Testing
+                        - paragraph: Leverage LLMs, MCP, and agents to auto-generate tests, triage defects, and evaluate quality.
+              - generic:
+                - generic:
+                  - generic:
+                    - generic: Featured Courses
+                    - heading [level=2]: Master the latest testing technologies
+                    - paragraph: with our most popular courses
+                  - generic:
+                    - generic:
+                      - generic:
+                        - img
+                        - generic:
+                          - generic: Best Seller
+                        - generic:
+                          - img
+                      - generic:
+                        - heading [level=3]: Selenium WebDriver with Java - Basics to Advanced
+                        - generic:
+                          - generic:
+                            - img
+                            - generic: "4.8"
+                            - generic: (45,123)
+                        - generic: 125,000 students enrolled
+                        - generic:
+                          - generic:
+                            - generic: $18.99
+                            - generic: $199.99
+                          - button: Enroll Now
+                    - generic:
+                      - generic:
+                        - img
+                        - generic:
+                          - generic: Best Seller
+                        - generic:
+                          - img
+                      - generic:
+                        - heading [level=3]: Rest API Automation Testing - Rest Assured Java
+                        - generic:
+                          - generic:
+                            - img
+                            - generic: "4.7"
+                            - generic: (32,451)
+                        - generic: 98,000 students enrolled
+                        - generic:
+                          - generic:
+                            - generic: $18.99
+                            - generic: $149.99
+                          - button: Enroll Now
+                    - generic:
+                      - generic:
+                        - img
+                        - generic:
+                          - generic: Best Seller
+                        - generic:
+                          - img
+                      - generic:
+                        - heading [level=3]: Learn GenAI Tools & AI Agents for Software Testing
+                        - generic:
+                          - generic:
+                            - img
+                            - generic: "4.9"
+                            - generic: (28,765)
+                        - generic: 87,000 students enrolled
+                        - generic:
+                          - generic:
+                            - generic: $18.99
+                            - generic: $179.99
+                          - button: Enroll Now
+                    - generic:
+                      - generic:
+                        - img
+                        - generic:
+                          - generic: Best Seller
+                        - generic:
+                          - img
+                      - generic:
+                        - heading [level=3]: Playwright with JavaScript - Complete Course
+                        - generic:
+                          - generic:
+                            - img
+                            - generic: "4.8"
+                            - generic: (15,432)
+                        - generic: 54,000 students enrolled
+                        - generic:
+                          - generic:
+                            - generic: $18.99
+                            - generic: $199.99
+                          - button: Enroll Now
+                    - generic:
+                      - generic:
+                        - img
+                        - generic:
+                          - generic: Best Seller
+                        - generic:
+                          - img
+                      - generic:
+                        - heading [level=3]: Playwright PYTHON Automation Testing - From Zero to Expert
+                        - generic:
+                          - generic:
+                            - img
+                            - generic: "4.6"
+                            - generic: (22,134)
+                        - generic: 67,000 students enrolled
+                        - generic:
+                          - generic:
+                            - generic: $18.99
+                            - generic: $129.99
+                          - button: Enroll Now
+                  - generic:
+                    - link:
+                      - /url: https://courses.rahulshettyacademy.com/courses
+                      - text: View More Courses
+              - generic:
+                - generic:
+                  - generic:
+                    - heading [level=2]: Ready to Transform Your QA Career?
+                    - paragraph: Join thousands of successful professionals who have elevated their careers with our comprehensive testing courses.
+                    - generic:
+                      - link:
+                        - /url: /all-access-subscription
+                        - img
+                        - text: All Access Membership
+                        - img
+                      - link:
+                        - /url: /ai-learning-path
+                        - img
+                        - text: Explore QA & AI Learning Paths
+                    - generic:
+                      - link:
+                        - /url: https://courses.rahulshettyacademy.com/courses
+                        - img
+                        - text: Explore Individual (All) Courses
+                      - link:
+                        - /url: "#exclusive-academy"
+                        - img
+                        - text: Join the Community
+              - generic:
+                - generic:
+                  - generic:
+                    - generic: Success Stories
+                    - heading [level=2]: Learner success stories
+                    - paragraph: Real outcomes from real learners worldwide.
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - img
+                          - generic:
+                            - img
+                            - img
+                            - img
+                            - img
+                            - img
+                        - paragraph: "\"Rahul's courses completely transformed my career. The practical approach and real-world projects helped me land my dream job at Microsoft. The AI testing module was particularly impressive!\""
+                        - generic:
+                          - heading [level=4]: Sarah Johnson
+                          - paragraph: QA Engineer at Microsoft
+                    - generic:
+                      - generic:
+                        - generic:
+                          - img
+                          - generic:
+                            - img
+                            - img
+                            - img
+                            - img
+                            - img
+                        - paragraph: "\"Best investment I've made for my career. The Selenium and Playwright courses are incredibly detailed. Went from manual testing to automation lead in 6 months!\""
+                        - generic:
+                          - heading [level=4]: Michael Chen
+                          - paragraph: Senior Test Automation Engineer
+                    - generic:
+                      - generic:
+                        - generic:
+                          - img
+                          - generic:
+                            - img
+                            - img
+                            - img
+                            - img
+                            - img
+                        - paragraph: "\"The comprehensive curriculum and lifetime access made all the difference. I now manage a team of 15 QA engineers. Thank you for the excellent training!\""
+                        - generic:
+                          - heading [level=4]: Priya Sharma
+                          - paragraph: QA Manager at Amazon
+                    - generic:
+                      - generic:
+                        - generic:
+                          - img
+                          - generic:
+                            - img
+                            - img
+                            - img
+                            - img
+                            - img
+                        - paragraph: "\"Rahul's teaching style is exceptional. The API testing and performance testing modules helped me transition to a Test Architect role. Highly recommend!\""
+                        - generic:
+                          - heading [level=4]: David Wilson
+                          - paragraph: Test Architect at Google
+                    - generic:
+                      - generic:
+                        - generic:
+                          - img
+                          - generic:
+                            - img
+                            - img
+                            - img
+                            - img
+                            - img
+                        - paragraph: "\"The courses are updated regularly with latest technologies. Started my own QA consulting business after completing the full stack testing program.\""
+                        - generic:
+                          - heading [level=4]: Lisa Rodriguez
+                          - paragraph: Senior QA Consultant
+                    - generic:
+                      - generic:
+                        - generic:
+                          - img
+                          - generic:
+                            - img
+                            - img
+                            - img
+                            - img
+                            - img
+                        - paragraph: "\"From zero to hero in automation testing. The mentorship program was invaluable. Now leading automation initiatives at Netflix!\""
+                        - generic:
+                          - heading [level=4]: Ahmed Hassan
+                          - paragraph: Lead QA Engineer at Netflix
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+                      - text: Exclusive Academy Access
+                    - heading [level=2]: JOIN OUR ACADEMY
+                    - paragraph: Transform your career with our comprehensive learning platform. Get instant access to below 2 Premium courses for Free, QA Job openings, Premium Monthly AI & Testing Insights Newsletter and join a community of successful QA professionals.
+                    - generic:
+                      - generic:
+                        - img
+                        - generic: "\"Learn Java Design Patterns for Test Framework\" course"
+                      - generic:
+                        - img
+                        - generic: "\"SDET/QA Automation Interview Kit + Java Logic Programs\" course"
+                    - generic:
+                      - link:
+                        - /url: https://courses.rahulshettyacademy.com/sign_up
+                        - text: JOIN NOW - FREE ACCESS
+                      - paragraph:
+                        - img
+                        - text: Limited time offer - Usually $197, now FREE!
+            - contentinfo:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - heading [level=3]: RAHUL SHETTY
+                      - paragraph: Transforming careers through comprehensive QA testing education. Join 1M+ learners worldwide.
+                    - generic:
+                      - heading [level=4]: Connect us on Socials
+                      - generic:
+                        - link:
+                          - /url: https://www.youtube.com/channel/UCgx5SDcUQWCQ_1CNneQzCRw
+                          - img
+                        - link:
+                          - /url: https://www.linkedin.com/in/rahul-shetty-venkatesh/
+                          - img
+                        - link:
+                          - /url: https://www.instagram.com/rahulshettyofficial_venkat/
+                          - img
+                  - generic:
+                    - heading [level=4]: Navigation
+                    - generic:
+                      - link:
+                        - /url: /all-access-subscription
+                        - text: All-Access
+                      - link:
+                        - /url: /learning-paths
+                        - text: Learning Paths
+                      - link:
+                        - /url: /mentorship
+                        - text: Mentorship
+                      - link:
+                        - /url: /ai-learning-path
+                        - text: AI Learning PathNEW
+                      - link:
+                        - /url: /practice
+                        - text: Practice
+                      - link:
+                        - /url: https://qasummit.org
+                        - text: Meet ups
+                      - link:
+                        - /url: https://rahulshettyacademy.com/blog/
+                        - text: Blog
+                  - generic:
+                    - heading [level=4]: Popular Courses
+                    - generic:
+                      - link:
+                        - /url: https://courses.rahulshettyacademy.com/p/selenium-webdriver-interview-questions-tutorial-1
+                        - text: Selenium WebDriver
+                      - link:
+                        - /url: https://courses.rahulshettyacademy.com/p/playwright-js-ts-automation-testing-from-scratch-framework
+                        - text: Playwright Testing
+                      - link:
+                        - /url: https://courses.rahulshettyacademy.com/p/rest-api-automation-rest-assured-java
+                        - text: API Testing
+                      - link:
+                        - /url: https://courses.rahulshettyacademy.com/p/learn-agentic-ai-build-multi-agent-automation-workflow
+                        - text: AI Agents
+                      - link:
+                        - /url: https://courses.rahulshettyacademy.com/p/learn-generativen-ai-in-software-testing
+                        - text: AI Testing Tools
+                      - link:
+                        - /url: https://courses.rahulshettyacademy.com/courses
+                        - text: Browse All Courses
+                  - generic:
+                    - heading [level=4]: Support
+                    - generic:
+                      - link:
+                        - /url: https://courses.rahulshettyacademy.com/sign_in
+                        - text: Student Login
+                      - link:
+                        - /url: /contact-us
+                        - text: Contact Us
+                      - link:
+                        - /url: "#"
+                        - text: Help Center
+                      - link:
+                        - /url: "#"
+                        - text: Community
+                      - link:
+                        - /url: "#"
+                        - text: Terms of Service
+                      - link:
+                        - /url: "#"
+                        - text: Privacy Policy
+                - generic:
+                  - generic:
+                    - generic:
+                      - paragraph: © 2025 Rahul Shetty Academy. All rights reserved.
+                      - generic: •
+                      - generic:
+                        - generic: Built with ♥ for testers worldwide.
+                    - generic:
+                      - generic: contact@rahulshettyacademy.com
+                      - generic:
+                        - img
+                        - generic: Trusted by 1M+ QA Engineers
+        - dialog "The IT Recruitment System is Broken." [ref=f1e2]:
+          - generic [ref=f1e3]:
+            - heading "The IT Recruitment System is Broken." [level=2] [ref=f1e4]
+            - paragraph [ref=f1e5]: Shortlisting shouldn't depend on luck - it should depend on real talent.
+          - generic [ref=f1e6]:
+            - generic [ref=f1e7]:
+              - paragraph [ref=f1e8]: 🚀 Our team is building a product, a platform designed to connect skilled professionals directly with the right recruiters.
+              - paragraph [ref=f1e9]: Be part of this mission!
+              - paragraph [ref=f1e10]: Join us to share ideas, test the product, and get early access when the portal goes LIVE.
+            - generic [ref=f1e11]:
+              - generic [ref=f1e12]:
+                - text: Name
+                - textbox "Name" [active] [ref=f1e13]:
+                  - /placeholder: Enter your name
+              - generic [ref=f1e14]:
+                - text: Email
+                - textbox "Email" [ref=f1e15]:
+                  - /placeholder: Enter your email
+              - button "Submit" [ref=f1e16] [cursor=pointer]
+          - button "Close" [ref=f1e17] [cursor=pointer]:
+            - img [ref=f1e18]
+            - generic [ref=f1e21]: Close
+  - table [ref=e178]:
+    - rowgroup [ref=e179]:
+      - row "Discount Coupons REST API SoapUI Appium JMeter Latest News Broken Link Dummy Content for Testing. Dummy Content for Testing. Dummy Content for Testing. Contact info Dummy Content for Testing. Dummy Content for Testing. Dummy Content for Testing. Dummy Content for Testing. Social Media Facebook Twitter Google+ Youtube" [ref=e180]:
+        - cell "Discount Coupons REST API SoapUI Appium JMeter" [ref=e181]:
+          - list [ref=e182]:
+            - listitem [ref=e183]:
+              - heading "Discount Coupons" [level=3] [ref=e184]:
+                - link "Discount Coupons" [ref=e185] [cursor=pointer]:
+                  - /url: "#"
+            - listitem [ref=e186]:
+              - link "REST API" [ref=e187] [cursor=pointer]:
+                - /url: http://www.restapitutorial.com/
+            - listitem [ref=e188]:
+              - link "SoapUI" [ref=e189] [cursor=pointer]:
+                - /url: https://www.soapui.org/
+            - listitem [ref=e190]:
+              - link "Appium" [ref=e191] [cursor=pointer]:
+                - /url: https://www.udemy.com/course/mobile-automation-using-appiumselenium-3/?referralCode=C46BF551F5B9EAF08E10
+            - listitem [ref=e192]:
+              - link "JMeter" [ref=e193] [cursor=pointer]:
+                - /url: https://jmeter.apache.org/
+        - cell "Latest News Broken Link Dummy Content for Testing. Dummy Content for Testing. Dummy Content for Testing." [ref=e194]:
+          - list [ref=e195]:
+            - listitem [ref=e196]:
+              - heading "Latest News" [level=3] [ref=e197]:
+                - link "Latest News" [ref=e198] [cursor=pointer]:
+                  - /url: "#"
+            - listitem [ref=e199]:
+              - link "Broken Link" [ref=e200] [cursor=pointer]:
+                - /url: https://rahulshettyacademy.com/brokenlink
+            - listitem [ref=e201]:
+              - link "Dummy Content for Testing." [ref=e202] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e203]:
+              - link "Dummy Content for Testing." [ref=e204] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e205]:
+              - link "Dummy Content for Testing." [ref=e206] [cursor=pointer]:
+                - /url: "#"
+        - cell "Contact info Dummy Content for Testing. Dummy Content for Testing. Dummy Content for Testing. Dummy Content for Testing." [ref=e207]:
+          - list [ref=e208]:
+            - listitem [ref=e209]:
+              - heading "Contact info" [level=3] [ref=e210]:
+                - link "Contact info" [ref=e211] [cursor=pointer]:
+                  - /url: "#"
+            - listitem [ref=e212]:
+              - link "Dummy Content for Testing." [ref=e213] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e214]:
+              - link "Dummy Content for Testing." [ref=e215] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e216]:
+              - link "Dummy Content for Testing." [ref=e217] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e218]:
+              - link "Dummy Content for Testing." [ref=e219] [cursor=pointer]:
+                - /url: "#"
+        - cell "Social Media Facebook Twitter Google+ Youtube" [ref=e220]:
+          - list [ref=e221]:
+            - listitem [ref=e222]:
+              - heading "Social Media" [level=3] [ref=e223]:
+                - link "Social Media" [ref=e224] [cursor=pointer]:
+                  - /url: "#"
+            - listitem [ref=e225]:
+              - link "Facebook" [ref=e226] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e227]:
+              - link "Twitter" [ref=e228] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e229]:
+              - link "Google+" [ref=e230] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e231]:
+              - link "Youtube" [ref=e232] [cursor=pointer]:
+                - /url: "#"
+  - generic [ref=e233]:
+    - text: © 2019 Powered by
+    - strong [ref=e234]:
+      - link "Medianh Consulting" [ref=e235] [cursor=pointer]:
+        - /url: http://www.medianhconsulting.com
+  - status [ref=e236]
+```

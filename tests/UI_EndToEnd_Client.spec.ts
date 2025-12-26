@@ -6,7 +6,7 @@ test('End to End Client App @UI',async({browser}) => {
     const context: any = await browser.newContext();
     const page: Page = await context.newPage();
     //opening application url
-    await page.goto('https://rahulshettyacademy.com/client');
+    await page.goto('https://rahulshettyacademy.com/client/#/auth/login');
     await page.waitForLoadState('networkidle'); //waiting for network to be stable
     const eMailField: Locator = page.locator('#userEmail');
     const passwordField: Locator = page.locator('#userPassword');

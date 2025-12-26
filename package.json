@@ -7,7 +7,8 @@
     "api": "npx playwright test --grep @APInUI",
     "fileop": "npx playwright test --grep @FileOpnUI",
     "smoke": "npx playwright test --grep @SmokeUI",
-    "web": "npx playwright test --grep @UI"
+    "web": "npx playwright test --grep @UI",
+    "browsercompatibility": "npx playwright test tests/UI_EndToEnd_Client.spec.ts --config=playwright_multibrowser.config.ts"
   },
   "keywords": [],
   "author": "",

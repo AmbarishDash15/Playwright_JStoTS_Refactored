@@ -16,7 +16,7 @@ interface TestDataForOrder {
 export const customTest = baseTest.extend<{testDataForOrder: TestDataForOrder}>(
     {
         testDataForOrder : {
-            appUrl : "https://rahulshettyacademy.com/client",
+            appUrl : "https://rahulshettyacademy.com/client/#/auth/login",
             loginEmail : "dash.ambarish15+seventh@gmail.com",
             password : "Password@123",
             itemToBuy : "ZARA COAT 3",

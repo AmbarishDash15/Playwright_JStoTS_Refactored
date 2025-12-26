@@ -1,6 +1,6 @@
 [
     {
-        "appUrl" : "https://rahulshettyacademy.com/client",
+        "appUrl" : "https://rahulshettyacademy.com/client/#/auth/login",
         "loginEmail" : "dash.ambarish15+fourth@gmail.com",
         "password" : "Password@123",
         "itemToBuy" : "ZARA COAT 3",
@@ -13,7 +13,7 @@
         "country" : "India"
     },
     {
-        "appUrl" : "https://rahulshettyacademy.com/client",
+        "appUrl" : "https://rahulshettyacademy.com/client/#/auth/login",
         "loginEmail" : "dash.ambarish15+fifth@gmail.com",
         "password" : "Password@123",
         "itemToBuy" : "ADIDAS ORIGINAL",

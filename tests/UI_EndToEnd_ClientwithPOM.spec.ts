@@ -2,7 +2,7 @@ import {test} from '@playwright/test';
 import {PageObjectManager} from '../pageObjects/PageObjectManager';
 
 test('End to End Client App with POM @UI',async({page}) => {
-    const appUrl: string = 'https://rahulshettyacademy.com/client'; //test data
+    const appUrl: string = 'https://rahulshettyacademy.com/client/#/auth/login'; //test data
     const loginEmail: string = 'dash.ambarish15+sixth@gmail.com'; //test data
     const password: string = 'Password@123'; //test data
     const itemToBuy: string = 'ZARA COAT 3'; //testdata

@@ -1,5 +1,4 @@
 import { test, expect, type Locator, type Browser, type Page } from '@playwright/test';
-test.describe.configure({mode: 'parallel'});
 
 test('Interact with Web elements @SmokeUI',async({page}) => {
     await page.goto('https://rahulshettyacademy.com/AutomationPractice/');

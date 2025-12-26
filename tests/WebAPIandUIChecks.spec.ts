@@ -1,5 +1,4 @@
 import {test,expect,request, type Locator} from '@playwright/test';
-test.describe.configure({mode: 'serial'});
 const loginEmail: string = 'dash.ambarish15+api@gmail.com';
 interface LoginPayload { userEmail: string; userPassword: string;}
 const loginPayload: LoginPayload = {userEmail:loginEmail,userPassword:'Password@123'};
@@ -8,6 +7,7 @@ interface OrderPayLoad { orders: [{country: string; productOrderedId: string}] }
 const orderPayLoad: OrderPayLoad = {orders:[{country:countryToSelect,productOrderedId:'68a961459320a140fe1ca57a'}]};
 var token: string;
 var orderID: string;
+test.describe.configure({mode:'serial'});
 
 test.beforeEach(async() => {
     const APIContext: any = await request.newContext();
@@ -102,17 +102,16 @@ test('End to End using API Login @APInUI', async({page}) => {
 
     //Go to Orders page and verify order
     await ordersBtn.click();
-    await page.waitForLoadState('domcontentloaded');
-    await expect(page.locator('h1.ng-star-inserted')).toContainText('Your Orders');
-    const orderRows: Locator = page.locator('tr.ng-star-inserted');
-    const orderCount: number = await orderRows.count();
+    await page.waitForLoadState('networkidle');
+    const orderTable: Locator = page.locator('table tbody');
+    await orderTable.waitFor({state: 'attached'});
+    expect(await page.locator('h1.ng-star-inserted').textContent()).toContain('Your Orders');
     //Search for orders based on ORDER ID in table and click on Order details
-    for (var i: number = 0;i<orderCount;i++){
-        if(await orderRows.nth(i).locator('th').textContent() === orderID){
-            orderRows.nth(i).locator('button.btn-primary').click();
-            break;
-        }
-    }
+    
+    const orderIDCell: Locator = page.locator('th',{hasText:orderID});
+    const rowOrder: Locator = page.locator('tr',{has: orderIDCell});
+    const viewBtn: Locator = rowOrder.locator('button',{hasText:'View'});
+    await viewBtn.click();
 
     //verify order id on order details page
 
@@ -151,16 +150,15 @@ test('Login and Order with API and order UI Validation @APInUI',async({page}) =>
     const ordersBtn: Locator = page.locator('button[routerlink*="/myorders"]');
     await ordersBtn.click();
     await page.waitForLoadState('networkidle');
+    const orderTable: Locator = page.locator('table tbody');
+    await orderTable.waitFor({state: 'attached'});
     expect(await page.locator('h1.ng-star-inserted').textContent()).toContain('Your Orders');
-    const orderRows: Locator = page.locator('tr.ng-star-inserted');
-    const orderCount: number = await orderRows.count();
     //Search for orders based on ORDER ID in table and click on Order details
-    for (var i: number = 0;i<orderCount;i++){
-        if(await orderRows.nth(i).locator('th').textContent() === orderID){
-            orderRows.nth(i).locator('button.btn-primary').click();
-            break;
-        }
-    }
+    
+    const orderIDCell: Locator = page.locator('th',{hasText:orderID});
+    const rowOrder: Locator = page.locator('tr',{has: orderIDCell});
+    const viewBtn: Locator = rowOrder.locator('button',{hasText:'View'});
+    await viewBtn.click();
 
     //verify order id on order details page
 

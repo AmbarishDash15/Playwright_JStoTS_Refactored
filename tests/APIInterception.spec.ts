@@ -5,6 +5,7 @@ const loginPayload: LoginPayload = {userEmail:'dash.ambarish15@gmail.com',userPa
 interface EmptyOrderListRespone {data:[];message: string;};
 const emptyOrderListRespone: EmptyOrderListRespone = {data:[],message:'No Orders'};
 var token: string;
+test.describe.configure({mode: 'parallel'});
 
 test.beforeEach( async() => {
     const APIContext: any = await request.newContext();

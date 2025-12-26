@@ -109,6 +109,7 @@ test('End to End using API Login @APInUI', async({page}) => {
     //Search for orders based on ORDER ID in table and click on Order details
     
     const orderIDCell: Locator = page.locator('th',{hasText:orderID});
+    await expect(orderIDCell).toBeVisible();
     const rowOrder: Locator = page.locator('tr',{has: orderIDCell});
     const viewBtn: Locator = rowOrder.locator('button',{hasText:'View'});
     await viewBtn.click();
@@ -156,6 +157,7 @@ test('Login and Order with API and order UI Validation @APInUI',async({page}) =>
     //Search for orders based on ORDER ID in table and click on Order details
     
     const orderIDCell: Locator = page.locator('th',{hasText:orderID});
+    await expect(orderIDCell).toBeVisible();
     const rowOrder: Locator = page.locator('tr',{has: orderIDCell});
     const viewBtn: Locator = rowOrder.locator('button',{hasText:'View'});
     await viewBtn.click();

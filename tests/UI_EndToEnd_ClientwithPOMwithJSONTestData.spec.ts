@@ -43,6 +43,7 @@ test('End to End Client App with POM with JSON Test Data @UI',async({page}) => {
     //Search for Order Id in Orders page and go to Order details
     const ordersPage: any =  pageObjectManager.getOrdersPage();
     await ordersPage.verifyOrdersPageLabel();
+    await ordersPage.verifyOrderNumber(orderID);
     await ordersPage.clickViewOrderButton(orderID);
     
     //verify order id and other details on Order details page

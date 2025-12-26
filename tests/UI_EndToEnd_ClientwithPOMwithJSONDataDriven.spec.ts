@@ -8,23 +8,23 @@ for(const data of testData){
         const pageObjectManager: PageObjectManager = new PageObjectManager(page);//Initiate Page Object Manager
         
         //Navigate to Login page and perform valid login
-        const loginPage: any = await pageObjectManager.getLoginPage();
+        const loginPage: any = pageObjectManager.getLoginPage();
         await loginPage.openApplicationUrl(data.appUrl); 
         await loginPage.validLogin(data.loginEmail,data.password); 
         
         //Search for item and add to cart
-        const dashboardPage: any = await pageObjectManager.getDashboardPage();
+        const dashboardPage: any = pageObjectManager.getDashboardPage();
         await dashboardPage.selectItemAndAddToCart(data.itemToBuy);
         await dashboardPage.verifyAddedToCartMsg();
         await dashboardPage.goToCart();
         
         //Verify item on Cart page and checkout
-        const cartPage: any = await pageObjectManager.getCartPage();
+        const cartPage: any = pageObjectManager.getCartPage();
         await cartPage.verifyProductAddedToCart(data.itemToBuy);
         await cartPage.clickCheckOut();
         
         //Enter details on Check out page and Checkout
-        const checkOutPage: any = await pageObjectManager.getCheckOutPage();
+        const checkOutPage: any = pageObjectManager.getCheckOutPage();
         await checkOutPage.clearAndEnterCCNo(data.ccNo);
         await checkOutPage.selectExpMonthYear(data.ccExpMonth,data.ccExpYear);
         await checkOutPage.enterCVVField(data.ccCVV);
@@ -35,7 +35,7 @@ for(const data of testData){
         await checkOutPage.clickPlaceOrderBtn();
 
         //Verify order confirmation and grab the ORDER ID
-        const orderConfirmationPage: any = await pageObjectManager.getOrderConfirmationPage();
+        const orderConfirmationPage: any = pageObjectManager.getOrderConfirmationPage();
         await orderConfirmationPage.verifyDetailsOnConfirmationPage(data.itemToBuy);
         const orderID: string = await orderConfirmationPage.getOrderIDFromConfPage();
 
@@ -43,12 +43,13 @@ for(const data of testData){
         await dashboardPage.goToOrders();
 
         //Search for Order Id in Orders page and go to Order details
-        const ordersPage: any = await pageObjectManager.getOrdersPage();
+        const ordersPage: any = pageObjectManager.getOrdersPage();
         await ordersPage.verifyOrdersPageLabel();
+        await ordersPage.verifyOrderNumber(orderID);
         await ordersPage.clickViewOrderButton(orderID);
         
         //verify order id and other details on Order details page
-        const orderDetailsPage: any = await pageObjectManager.getOrderDetailsPage();
+        const orderDetailsPage: any = pageObjectManager.getOrderDetailsPage();
         await orderDetailsPage.verifyOrderDetails(orderID, data.loginEmail, data.country, data.itemToBuy);
     })
 }

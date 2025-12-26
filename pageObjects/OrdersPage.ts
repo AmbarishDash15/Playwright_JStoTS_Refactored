@@ -14,6 +14,10 @@ export class OrdersPage {
         await this.orderTable.waitFor({state: 'attached'});
         await expect(this.yourOrdersLabel).toContainText('Your Orders');
     }
+    async verifyOrderNumber(orderID: string){
+        const orderIDCell: Locator = this.page.locator('th',{hasText:orderID});
+        await expect(orderIDCell).toBeVisible();
+    }
     async clickViewOrderButton(orderID: string){
         const orderIDCell: Locator = this.page.locator('th',{hasText:orderID});
         const rowOrder: Locator = this.page.locator('tr',{has: orderIDCell});
